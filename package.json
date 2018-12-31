@@ -11,9 +11,11 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "express": "^4.16.4"
+        "express": "^4.16.4",
+        "mysql": "github:mysqljs/mysql"
     },
     "devDependencies": {
-        "@types/express": "^4.16.0"
+        "@types/express": "^4.16.0",
+        "@types/mysql": "^2.15.5"
     }
 }
