@@ -20,6 +20,15 @@ export default class MySQL {
 
         this.connectDB();
     }
+
+    // Verificates if already exists an instance and returns it. 
+    // If not, it creates a new one.
+    public static get instance(){
+        return this._instance  ||(this._instance = new this())   ;
+    }
+
+
+
     // Now we will create a method to handle posible connection errors
     private connectDB() {
         this.cnn.connect((err: mysql.MysqlError) => {
